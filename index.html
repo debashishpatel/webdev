@@ -31,20 +31,22 @@
     <h2>@List</h2>
 
     <h3>unordered list</h3>
-    <ul>
+    <p>this list donot have bullet</p>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
 
-    <ul>
-        <li>item one</li>
-        <li>itme two</li>
-        <li>item three</li>
+    <p>this list have inline property</p>
+    <ul class="list-non-bullet"
+        <li class="list-item-inline">item one</li>
+        <li class="list-item-inline">item two</li>
+        <li class="list-item-inline">item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>item one</li>
         <li>ite two</li>
         <li>item three</li>
@@ -53,46 +55,53 @@
     <hr>
 
     <h2>@nav</h2>
-    <div>Debashish Portfolio</div>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/">Projects</a>
-        </li>
-        <li>
-            <a href="/">Blogs</a>
-        </li>
-    </ul>
+    <nav class="navigation container">
+        <div class="nav-brand">Debashish Portfolio</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline">
+                    <a class="link" href="/">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/">Projects</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/">Blogs</a>
+                </li>
+            </ul>
+    </nav>
+    
 
     <hr>
     
     <h2>@Header</h2>
-    <header>
-        <img src="images/website.svg"/>
-        <h1>heading inside here</h1>
+    <header class="hero container container-center">
+        <img class="hero-image" src="images/website.svg"/>
+        <h1><span class="hero-image-specify">Mind</span> your own business</h1>
     </header>
 
     <hr>
 
-    <section>
-        <h2>white section</h2>
-        <p>has a white background</p>
-    </section>
-
-    <section>
-        <h2>grey secton</h2>
-        <p>has a grey background</p>
-    </section>
+    <div class=" section">
+        <section class="white-section">
+            <h2 class="container container-center">white section</h2>
+            <p class="container container-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ipsam totam, facere ea similique cumque doloremque libero tempora eius nobis? Excepturi, in ratione. Exercitationem, rerum fugiat nam corrupti quas modi!</p>
+        </section>
+    
+        <section class="grey-section">
+            <h2 class="container container-center">grey secton</h2>
+            <p class="container container-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quod in illum at incidunt aut, assumenda, ab quaerat sapiente magni perspiciatis aspernatur ullam atque commodi minus aliquam aliquid ad recusandae?</p>
+        </section>
+    </div>
+    
     
     <hr>
 
-    <footer>
-        <ul>
-            <li>twitter</li>
-            <li>facebook</li>
-            <li>github</li>
+    <footer class="footer">
+        <h2 class="container container-center">@footer</h2>
+        <ul class="footer-list container list-non-bullet list container-center">
+            <li class="list-item-inline">twitter</li>
+            <li class="list-item-inline">facebook</li>
+            <li class="list-item-inline">github</li>
         </ul>
     </footer>
 </body>
